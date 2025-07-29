@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Mighty Souly";
+  src: url("./assets/fonts/MightySouly.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1 {
+  font-family: "Mighty Souly";
+  font-size: 50px;
+}
