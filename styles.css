@@ -6,7 +6,89 @@
   font-display: swap;
 }
 
-h1 {
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2"), 
+       url("./assets/fonts/PlayfairDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./assets/fonts/PlayfairDisplay-Italic.woff2") format("woff2"), 
+       url("./assets/fonts/PlayfairDisplay-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src: url("./assets/fonts/PlayfairDisplay-Bold.woff2") format("woff2"), 
+       url("./assets/fonts/PlayfairDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset Default Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Playfair Display";
+}
+
+.left-side {
+  background-image: url("./assets/images/pink-building.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+  width: 37vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0.5rem;
+}
+
+.logo-background-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: calc(2 * 100% / 3);
+  justify-content: center;
+}
+
+.logo-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.logo-text {
   font-family: "Mighty Souly";
-  font-size: 50px;
+  font-size: 4rem;
+  color: #FFF;
+}
+
+.background-img-credit {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.background-img-credit, 
+.credit-link {
+  color: white;
 }
