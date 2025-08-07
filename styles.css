@@ -21,6 +21,8 @@ html {
   display: flex;
 }
 
+/* Left side of site */
+
 .left-side {
   background-image: url("./assets/images/pink-building.jpg");
   background-size: cover;
@@ -37,7 +39,7 @@ html {
 .logo-background-wrapper {
   display: flex;
   flex-direction: column;
-  height: calc(2 * 100% / 3);
+  height: calc(3 * 100% / 5);
   justify-content: center;
 }
 
@@ -47,11 +49,11 @@ html {
   justify-content: center;
   align-items: center;
   gap: 0.25rem;
-  padding: 0.5rem 0;
+  padding: 0.55rem 0;
 }
 
 .logo {
-  height: 6rem;
+  height: 6.25rem;
 }
 
 .logo-text {
@@ -72,6 +74,8 @@ html {
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
+
+/* Right side of site */
 .description {
   padding: 8.25rem 8rem 0 2.5rem;
 }
@@ -93,6 +97,8 @@ html {
   margin-bottom: 2.75rem;
 }
 
+
+/* Form Styling */
 .form-container {
   box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   padding: 1rem 8rem 1rem 2.5rem;
@@ -103,10 +109,6 @@ html {
   font-size: 1.2rem;
   margin-top: 0.2rem;
   margin-bottom: 1.25rem;
-}
-
-form {
-
 }
 
 .form-row {
