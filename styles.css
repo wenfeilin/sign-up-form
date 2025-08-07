@@ -6,33 +6,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("./assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2"), 
-       url("./assets/fonts/PlayfairDisplay-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("./assets/fonts/PlayfairDisplay-Italic.woff2") format("woff2"), 
-       url("./assets/fonts/PlayfairDisplay-Italic.woff") format("woff");
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Playfair Display";
-  src: url("./assets/fonts/PlayfairDisplay-Bold.woff2") format("woff2"), 
-       url("./assets/fonts/PlayfairDisplay-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-
 /* Reset Default Styles */
 * {
   padding: 0;
@@ -41,7 +14,7 @@
 }
 
 html {
-  font-family: "Playfair Display";
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
@@ -82,7 +55,7 @@ html {
 }
 
 .logo-text {
-  font-family: "Mighty Souly";
+  font-family: "Mighty Souly", sans-serif;
   font-size: 4rem;
   color: #FFF;
 }
@@ -95,12 +68,126 @@ html {
 
 .background-img-credit, 
 .credit-link {
-  color: white;
+  color: #FFF;
   text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 }
 
+.description {
+  padding: 8.25rem 8rem 0 2.5rem;
+}
 
+.description {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
 
 .italic {
   font-style: italic;
+}
+
+.description p {
+  margin-bottom: 1.25rem;
+}
+
+.description p:last-child {
+  margin-bottom: 2.75rem;
+}
+
+.form-container {
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  padding: 1rem 8rem 1rem 2.5rem;
+  color: #1F2937;
+}
+
+.form-title {
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+  margin-bottom: 1.25rem;
+}
+
+form {
+
+}
+
+.form-row {
+  display: flex;
+  gap: 3.55rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group:not(last-child) {
+  margin-bottom: 1.05rem;
+}
+
+label {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.085rem;
+  margin-bottom: 0.1rem;
+}
+
+input {
+  border: 0.1rem solid #E5E7EB;
+  border-radius: 0.2rem;
+  height: 1.6rem;
+  width: 13rem;
+  padding: 0 0.43rem;
+  font-family: inherit;
+}
+
+input:focus {
+  outline: none;
+  border-color: #5478db;
+  box-shadow: 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.2);
+}
+
+input:invalid {
+  border-color: #C64646;
+}
+
+.form-actions {
+  padding: 1.75rem 8rem 0 2.5rem;
+}
+
+button[type="submit"] {
+  background-color: #B8827C;
+  color: #FFF;
+  font-weight: bold;
+  font-size: 0.86rem;
+  border: none;
+  border-radius: 0.4rem;
+  padding: 0.8rem 2.65rem;
+  margin-bottom: 1.8rem;
+  box-shadow: 0.1rem 0.25rem 0.2rem rgba(0, 0, 0, 0.1);
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: rgba(184, 130, 124, 0.8);
+}
+
+.form-actions p {
+  font-size: 0.9rem;
+}
+
+.log-in-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #B8827C;
+}
+
+.log-in-link:visited {
+  color: #374523;
+}
+
+.log-in-link:hover {
+  color: rgba(184, 130, 124, 0.8); 
+}
+
+.log-in-link:active {
+  color: rgba(184, 130, 124, 0.5); 
 }

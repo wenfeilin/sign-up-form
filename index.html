@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign-up Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+        rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
@@ -28,39 +32,61 @@
       </p>
     </div>
     <main>
-      <p>
-        This is not a real online service! You know you need something like this in your life to
-        help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.
-      </p>
-      <p>
-        You <span class="italic">know</span> you want to.
-      </p>
+      <div class="description">
+        <p>
+          This is not a real online service! You know you need something like this in your life to
+          help you realize your deepest dreams. Sign up <span class="italic">now</span> to get started.
+        </p>
+        <p>
+          You <span class="italic">know</span> you want to.
+        </p>
+      </div>
 
       <div class="form-container">
-        <h2>Let's do this!</h2>
+        <h2 class="form-title">Let's do this!</h2>
 
         <form id="sign-up-form" action="" method="post">
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" id="first-name" name="firstName">
+          <div class="form-row">
+            <div class="input-group">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" id="first-name" name="firstName">
+            </div>
 
-          <label for="last-name">LAST NAME</label>
-          <input type="text" id="last-name" name="lastName">
+            <div class="input-group">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" id="last-name" name="lastName">
+            </div>
+          </div>
 
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" name="email">
-          
-          <label for="phone-number">PHONE NUMBER</label>
-          <input type="tel" id="phone-number" name="phone-number">
+          <div class="form-row">
+            <div class="input-group">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email">
+            </div>
+            
+            <div class="input-group">
+              <label for="phone-number">PHONE NUMBER</label>
+              <input type="tel" id="phone-number" name="phone-number" pattern="\d{3}-\d{3}-\d{4}">
+            </div>
+          </div>
 
-          <label for="password">PASSWORD</label>
-          <input type="password" id="password" name="password">
+          <div class="form-row">
+            <div class="input-group">
+              <label for="password">PASSWORD</label>
+              <input type="password" id="password" name="password" required>
+            </div>
 
-          <label for="confirm-password">CONFIRM PASSWORD</label>
-          <input type="password" id="confirm-password" name="confirmPassword">
+            <div class="input-group">
+              <label for="confirm-password">CONFIRM PASSWORD</label>
+              <input type="password" id="confirm-password" name="confirmPassword" required>
+            </div>
+          </div>
         </form>
+      </div>
 
+      <div class="form-actions">
         <button type="submit" form="sign-up-form">Create Account</button>
-        <p>Already have an account? <a href="" class="log-in-link">Log in</a></p>
+        <p>Already have an account? <a href="https://www.example.com" class="log-in-link">Log in</a></p>
       </div>
     </main>
   </div>
